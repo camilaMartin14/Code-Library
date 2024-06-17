@@ -10,9 +10,6 @@ import java.io.IOException;
 import es.discoduroderoer.arrays.Array;
 import java.lang.reflect.Array;
 
-/**
- * @author DiscoDurodeRoer
- */
 public class Binarios {
  
     /**
