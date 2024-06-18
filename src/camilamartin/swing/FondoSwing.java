@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class FondoSwing implements Border {
 
@@ -55,5 +55,4 @@ public class FondoSwing implements Border {
         JPanel panel = (JPanel) frame.getContentPane();
         panel.setBorder(this);
     }
-
 }

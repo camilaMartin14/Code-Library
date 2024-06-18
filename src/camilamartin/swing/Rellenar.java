@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.swing;
 
 import java.sql.ResultSet;
@@ -16,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Rellenar {
     
@@ -30,7 +24,6 @@ public class Rellenar {
         for(int i=0;i<datos.length;i++){
             cmb.addItem(datos[i]);
         }
-        
     }
     
     /**
@@ -47,7 +40,6 @@ public class Rellenar {
         } catch (SQLException ex) {
             Logger.getLogger(MiSwing.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     /**
@@ -64,7 +56,6 @@ public class Rellenar {
         } catch (SQLException ex) {
             Logger.getLogger(MiSwing.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     /**
@@ -81,7 +72,6 @@ public class Rellenar {
         } catch (SQLException ex) {
             Logger.getLogger(MiSwing.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     /**
@@ -140,8 +130,5 @@ public class Rellenar {
              }
              modelo.addRow(filas);
          }
-         
     }
-    
-    
 }

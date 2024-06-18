@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.swing;
 
 import java.awt.Component;
@@ -36,7 +32,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class MiSwing {
 
@@ -202,7 +198,6 @@ public class MiSwing {
         for (int i = 0; i < controles.length; i++) {
             controles[i].setEnabled(activo);
         }
-
     }
 
     /**
@@ -216,7 +211,6 @@ public class MiSwing {
         String[] newSelection = (String[]) cmb.getSelectedItem();
 
         return Integer.parseInt(newSelection[0]);
-
     }
 
     /**
@@ -230,7 +224,6 @@ public class MiSwing {
         String[] newSelection = (String[]) cmb.getSelectedItem();
 
         return newSelection[1];
-
     }
 
     /**
@@ -246,7 +239,6 @@ public class MiSwing {
         } else {
             return campo.getText();
         }
-
     }
 
     /**
@@ -271,7 +263,6 @@ public class MiSwing {
         if (!encontrado) {
             cmb.setSelectedIndex(0);
         }
-
     }
 
     /**
@@ -291,7 +282,6 @@ public class MiSwing {
         }
 
         return datos;
-
     }
 
     /**
@@ -307,7 +297,6 @@ public class MiSwing {
             campos[i].setText(datos[i]);
 
         }
-
     }
 
     /**
@@ -326,9 +315,7 @@ public class MiSwing {
             if (frames[i] == frm) {
                 return true;
             }
-
         }
-
         return false;
     }
 
@@ -341,7 +328,6 @@ public class MiSwing {
 
         InputMap map2 = campo.getInputMap(JTextField.WHEN_FOCUSED);
         map2.put(KeyStroke.getKeyStroke(KeyEvent.VK_V, Event.CTRL_MASK), "null");
-
     }
 
     /**
@@ -360,7 +346,5 @@ public class MiSwing {
             }
         }
         return null;
-
     }
-
 }

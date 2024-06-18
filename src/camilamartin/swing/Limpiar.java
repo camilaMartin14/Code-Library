@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.swing;
 
 import javax.swing.JOptionPane;
@@ -25,7 +20,7 @@ import javax.swing.JToggleButton;
 import javax.swing.JViewport;
 
 /**
- * @author Discoduroderoer
+ * @author 2004c
  */
 public class Limpiar {
 
@@ -39,7 +34,6 @@ public class Limpiar {
         for (int i = 0; i < campos.length; i++) {
             campos[i].setText("");
         }
-
     }
 
     /**
@@ -53,7 +47,6 @@ public class Limpiar {
         if (campo.getText().isEmpty()) {
             campo.setText(valor);
         }
-
     }
 
     /**
@@ -92,7 +85,6 @@ public class Limpiar {
         } else {
             JOptionPane.showMessageDialog(null, "Error, el array de objetos y de campos debe ser igual");
         }
-
     }
 
     /**
@@ -128,38 +120,36 @@ public class Limpiar {
      */
     public static void limpiarFormulario(Component[] componentes) {
 
-        for (int i = 0; i < componentes.length; i++) {
-            if (componentes[i] instanceof JPanel) {
-                limpiarFormulario(((JPanel) componentes[i]).getComponents());
-            } else if (componentes[i] instanceof JViewport) {
-                limpiarFormulario(((JViewport) componentes[i]).getComponents());
-            } else if (componentes[i] instanceof JScrollPane) {
-                limpiarFormulario(((JScrollPane) componentes[i]).getComponents());
-            } else if (componentes[i] instanceof JTextField) {
-                ((JTextField) componentes[i]).setText("");
-            } else if (componentes[i] instanceof JTextArea) {
-                ((JTextArea) componentes[i]).setText("");
-            } else if (componentes[i] instanceof JPasswordField) {
-                ((JPasswordField) componentes[i]).setText("");
-            } else if (componentes[i] instanceof JCheckBox) {
-                ((JCheckBox) componentes[i]).setSelected(false);
-            } else if (componentes[i] instanceof JRadioButton) {
-                ((JRadioButton) componentes[i]).setSelected(false);
-            } else if (componentes[i] instanceof JToggleButton) {
-                ((JToggleButton) componentes[i]).setSelected(false);
-            } else if (componentes[i] instanceof JComboBox) {
-                ((JComboBox) componentes[i]).setSelectedIndex(0);
-            } else if (componentes[i] instanceof JSlider) {
-                ((JSlider) componentes[i]).setValue(((JSlider) componentes[i]).getMinimum());
-            } else if (componentes[i] instanceof JSpinner) {
-                ((JSpinner) componentes[i]).setValue(0);
-            } else if (componentes[i] instanceof JFormattedTextField) {
-                ((JFormattedTextField) componentes[i]).setText("");
-            } else if (componentes[i] instanceof JTable) {
-                ((DefaultTableModel) (((JTable) componentes[i]).getModel())).setRowCount(0);
+        for (Component componente : componentes) {
+            if (componente instanceof JPanel jPanel) {
+                limpiarFormulario(jPanel.getComponents());
+            } else if (componente instanceof JViewport jViewport) {
+                limpiarFormulario(jViewport.getComponents());
+            } else if (componente instanceof JScrollPane jScrollPane) {
+                limpiarFormulario(jScrollPane.getComponents());
+            } else if (componente instanceof JTextField jTextField) {
+                jTextField.setText("");
+            } else if (componente instanceof JTextArea jTextArea) {
+                jTextArea.setText("");
+            } else if (componente instanceof JPasswordField jPasswordField) {
+                jPasswordField.setText("");
+            } else if (componente instanceof JCheckBox jCheckBox) {
+                jCheckBox.setSelected(false);
+            } else if (componente instanceof JRadioButton jRadioButton) {
+                jRadioButton.setSelected(false);
+            } else if (componente instanceof JToggleButton jToggleButton) {
+                jToggleButton.setSelected(false);
+            } else if (componente instanceof JComboBox jComboBox) {
+                jComboBox.setSelectedIndex(0);
+            } else if (componente instanceof JSlider jSlider) {
+                jSlider.setValue(jSlider.getMinimum());
+            } else if (componente instanceof JSpinner jSpinner) {
+                jSpinner.setValue(0);
+            } else if (componente instanceof JFormattedTextField jFormattedTextField) {
+                jFormattedTextField.setText("");
+            } else if (componente instanceof JTable jTable) {
+                ((DefaultTableModel) (jTable.getModel())).setRowCount(0);
             }
         }
-
     }
-
 }

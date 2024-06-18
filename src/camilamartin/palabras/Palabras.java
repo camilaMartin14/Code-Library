@@ -1,14 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.palabras;
 
 import java.util.StringTokenizer;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Palabras {
 
@@ -23,7 +19,6 @@ public class Palabras {
         StringTokenizer texto = new StringTokenizer(cadena);
 
         return texto.countTokens();
-
     }
 
     /**
@@ -44,11 +39,8 @@ public class Palabras {
             if (caracter == caracterActual) {
                 contador++;
             }
-
         }
-
         return contador;
-
     }
 
     /**
@@ -63,9 +55,7 @@ public class Palabras {
         if (texto.indexOf('\'') != -1) {
             return texto.replaceAll("\'", "\'\'");
         }
-
         return texto;
-
     }
 
     /**
@@ -99,7 +89,6 @@ public class Palabras {
             caracter = cadena.charAt(i);
             cadenaInvertida += caracter;
         }
-
         return cadenaInvertida;
     }
 
@@ -117,7 +106,6 @@ public class Palabras {
         } else {
             return palabra.charAt(longitud) + (invertirPalabraRec(palabra, longitud - 1));
         }
-
     }
 
     /**
@@ -170,7 +158,5 @@ public class Palabras {
             }
         }
         return true;
-
     }
-
 }
