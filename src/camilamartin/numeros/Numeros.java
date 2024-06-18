@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Numeros {
 
@@ -26,10 +26,8 @@ public class Numeros {
                     menor = numeros[i];
                 }
             }
-
             return menor;
         }
-
     }
 
     /**
@@ -47,9 +45,7 @@ public class Numeros {
         } else {
             //Comparamos el 1º con el 2º, el 2º con el 3º, etc.
             return Math.min(numeros[indice], minimoRec(numeros, indice + 1));
-
         }
-
     }
 
     /**
@@ -73,7 +69,6 @@ public class Numeros {
 
             return mayor;
         }
-
     }
 
     /**
@@ -92,9 +87,7 @@ public class Numeros {
 
             //Comparamos el 1º con el 2º, el 2º con el 3º, etc.
             return Math.max(numeros[indice], maximoRec(numeros, indice + 1));
-
         }
-
     }
 
     /**
@@ -116,10 +109,8 @@ public class Numeros {
                     posicion = i;
                 }
             }
-
             return posicion;
         }
-
     }
 
     /**
@@ -141,10 +132,8 @@ public class Numeros {
                     posicion = i;
                 }
             }
-
             return posicion;
         }
-
     }
 
     /**
@@ -168,7 +157,6 @@ public class Numeros {
         } else {
             return posicionElementoRecursivo(array, elementoBuscar, indice + 1);
         }
-
     }
 
     /**
@@ -188,9 +176,7 @@ public class Numeros {
             for (int i = Math.abs(num); i > 0; i/=10) {
                 contador++;
             }
-
         }
-
         return contador;
     }
 
@@ -212,7 +198,6 @@ public class Numeros {
             num2 = suma;
         }
         return suma;
-
     }
 
     /**
@@ -234,7 +219,6 @@ public class Numeros {
             //Hago la suma
             return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
         }
-
     }
 
     /**
@@ -333,7 +317,5 @@ public class Numeros {
             //Cojo el modulo del numero y lo multiplico por la potencia (4 * 100) por ejemplo
             return (num % 10) * (int) Math.pow(10, pos) + (invertirNumRec(num / 10, pos - 1));
         }
-
     }
-
 }

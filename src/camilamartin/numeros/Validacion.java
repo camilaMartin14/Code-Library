@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.numeros;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Fernando
+ * @author 2004c
  */
 public class Validacion {
    
@@ -33,7 +27,6 @@ public class Validacion {
             }
         }while(interruptor);
            
-
         return num;
     }
     
@@ -56,8 +49,6 @@ public class Validacion {
                 JOptionPane.showMessageDialog(null, "No es un numero, prueba de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }while(interruptor);
-           
-
         return num;
     }
     
@@ -86,8 +77,6 @@ public class Validacion {
                 JOptionPane.showMessageDialog(null, "No es un numero, prueba de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }while(interruptor && (num < minimo || num > maximo));
-           
-
         return num;
     }
     
@@ -114,8 +103,6 @@ public class Validacion {
                 JOptionPane.showMessageDialog(null, "No es un numero, prueba de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }while(interruptor && (num < 0));
-           
-
         return num;
     }
     
@@ -143,7 +130,6 @@ public class Validacion {
                 JOptionPane.showMessageDialog(null, "No es un numero, prueba de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }while(interruptor && (num < 0));
-           
 
         return num;
     }
@@ -172,8 +158,6 @@ public class Validacion {
             }
         }while(interruptor && (num >= 0));
            
-
         return num;
     }
-    
 }

@@ -3,7 +3,7 @@ package camilamartin.numeros;
 import javax.swing.JOptionPane;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Calculo {
 
@@ -43,7 +43,6 @@ public class Calculo {
 
         //Devolvemos el valor
         return res;
-
     }
 
     /**
@@ -109,7 +108,6 @@ public class Calculo {
         } else {
             return (numero % 10) + sumaDigitosRec(numero / 10); //Cojo el digito y llamo a la funcion
         }
-
     }
 
     /**
@@ -135,7 +133,6 @@ public class Calculo {
             JOptionPane.showMessageDialog(null, "La ecuacion no se puede resolver");
             return null;
         }
-
     }
 
     /**
@@ -163,7 +160,6 @@ public class Calculo {
             return potencia >= 0;
 
         }
-
     }
 
     /**
@@ -181,7 +177,6 @@ public class Calculo {
         } else {  //Exponente positivo
             return base * potenciaRec(base, exponente - 1);
         }
-
     }
 
     /**
@@ -208,7 +203,6 @@ public class Calculo {
             } else {
                 return -1;
             }
-
         } else if (numeroFinal == 1 || numeroFinal == 0) {
             return numeroFinal;
         } else {
@@ -352,7 +346,6 @@ public class Calculo {
                 contador++;
             }
         }
-
         return contador < 1;
     }
 
@@ -380,7 +373,6 @@ public class Calculo {
                 contador++;
             }
         }
-
         return contador;
     }
 
@@ -408,8 +400,6 @@ public class Calculo {
                 indice++;
             }
         }
-
         return primos;
     }
-
 }

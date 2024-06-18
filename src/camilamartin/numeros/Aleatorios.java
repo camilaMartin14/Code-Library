@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Aleatorios {
 
@@ -62,7 +62,6 @@ public class Aleatorios {
 
             return numeros;
         }
-
     }
 
     /**
@@ -115,7 +114,6 @@ public class Aleatorios {
                 return null;
             }
         }
-
     }
 
     /**
@@ -201,7 +199,6 @@ public class Aleatorios {
             } while (!esPrimo(numPrimo));
             return numPrimo;
         }
-
     }
 
     /**
@@ -227,8 +224,6 @@ public class Aleatorios {
                 }
             }
         }
-
         return numerosPrimos;
     }
-
 }

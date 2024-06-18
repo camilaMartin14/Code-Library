@@ -4,7 +4,7 @@ import camilamartin.expresiones_regulares.ExpresionesRegulares;
 import javax.swing.JOptionPane;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Conversion {
 
@@ -44,7 +44,6 @@ public class Conversion {
             decimal += digito * Math.pow(2, j);
         }
         return decimal;
-
     }
 
     /**
@@ -125,7 +124,6 @@ public class Conversion {
             JOptionPane.showMessageDialog(null, "Error");
             return -1;
         }
-
     }
 
     /**
@@ -165,16 +163,12 @@ public class Conversion {
 
                     decimal += num * Math.pow(16, j);
                 }
-
             }
-
             return decimal;
-
         } else {
             JOptionPane.showMessageDialog(null, "Error");
             return -1;
         }
-
     }
 
     /**
@@ -203,9 +197,8 @@ public static int basexABaseY(long numero, int basex, int basey) {
             int numeroBaseY = basexABaseY(aDecimal, 10, basey);
             return numeroBaseY;
         }
-    } else {
-        return -1;
+        } else {
+            return -1;
+        }
     }
-}
-
 }

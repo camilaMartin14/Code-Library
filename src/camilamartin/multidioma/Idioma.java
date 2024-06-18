@@ -1,14 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.multidioma;
 
 import java.io.IOException;
 import java.util.Properties;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Idioma extends Properties{
     
