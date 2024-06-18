@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.ficheros;
 
 import java.io.File;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Rutas {
     
@@ -29,7 +23,6 @@ public class Rutas {
         }else{
             return rutaFichero;
         }
-        
     }
     
     /**
@@ -47,7 +40,6 @@ public class Rutas {
         }else{
             return rutaFichero.getAbsoluteFile().toString();
         }
-        
     }
     
     /**
@@ -69,8 +61,6 @@ public class Rutas {
                     ficherosRecursivos(ficheros[x],nuevo_separador);
                 }
             }
-        
         return contenido;
     }
-    
 }

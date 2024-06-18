@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.ficheros;
 
 import java.io.DataInputStream;
@@ -16,7 +10,7 @@ import java.io.IOException;
 import camilamartin.arrays.Array;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Binarios {
  
@@ -67,7 +61,6 @@ public class Binarios {
         }catch(IOException e){
             System.out.print(e.getMessage());
         }
-        
     }
     
     /**
@@ -111,13 +104,11 @@ public class Binarios {
                     case "Boolean":
                         dos.writeBoolean((Boolean)datos[i]);
                         break;   
-                }
+                    }
                 
-            }
-        }catch(IOException e){
-            
+                }
+            }catch(IOException e){
         }
-        
     }
     
     /**
@@ -169,8 +160,6 @@ public class Binarios {
                         contenido+=dis.readBoolean()+"\n";
                         break;   
                 }
-                
-                
             }
         }catch(EOFException e){
             System.out.print(e.getMessage());
@@ -226,7 +215,6 @@ public class Binarios {
                         contenido+=dis.readBoolean()+"\n";
                         break;   
                 }
-                
             }
         }catch(EOFException e){
             
@@ -253,10 +241,8 @@ public class Binarios {
                 while( (noOfBytes = fin.read(b)) != -1 ){
 			fout.write(b, 0, noOfBytes);
                 }
-         }catch(IOException e){
-             
+            }catch(IOException e){
          }
-        
     }
     
     /**
@@ -278,8 +264,5 @@ public class Binarios {
          }catch(IOException e){
              
          }
-        
     }
-    
-    
 }

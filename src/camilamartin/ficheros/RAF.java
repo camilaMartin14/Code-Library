@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.ficheros;
 
 import java.io.File;
@@ -9,7 +5,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- * @author DiscodurodeRoer
+ * @author 2004c
  */
 public class RAF {
     
@@ -38,7 +34,6 @@ public class RAF {
     public long posicionRegistro(int id){
         
         return (id-1)*tamanioRegistro;
-        
     }
     
     /**
@@ -48,7 +43,6 @@ public class RAF {
     public long posicionFinal(){
         
         return fichero.length();
-        
     }
     
     //
@@ -61,7 +55,6 @@ public class RAF {
     public long posicionDatoRegistro(int id, int distanciaDato){
         
         return ((id-1)*tamanioRegistro)+distanciaDato;
-        
     }
     
     /**
@@ -106,11 +99,9 @@ public class RAF {
                         System.out.println("error");
                 }
             }
-            
         }catch(IOException e){
             System.out.printf(e.getMessage());
         }
-        
     }
     
     /**
@@ -167,8 +158,6 @@ public class RAF {
         }catch(IOException e){
             return null;
         }
-        
-        
     }
     
     //
@@ -189,7 +178,6 @@ public class RAF {
         }catch(IOException e){
             
         }
-        
     }
     
     /**
@@ -234,5 +222,4 @@ public class RAF {
         
         return existe;
     }
-    
 }

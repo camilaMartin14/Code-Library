@@ -1,13 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.ficheros;
 
 import java.io.*;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class MiObjectOutputStream extends ObjectOutputStream{
     
