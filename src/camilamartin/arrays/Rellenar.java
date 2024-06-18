@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.arrays;
 
 import camilamartin.numeros.Aleatorios;
 import camilamartin.numeros.Validacion;
 
 /**
- * @author Discoduroderoer
+ * @author 2004c
  */
 public class Rellenar {
 
@@ -38,5 +33,4 @@ public class Rellenar {
             array[i] = Aleatorios.generaNumeroAleatorio(minimo, maximo);
         }
     }
-
 }

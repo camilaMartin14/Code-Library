@@ -1,20 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.arrays;
 
 import camilamartin.numeros.Numeros;
 import java.util.Arrays;
 
 /**
- * @author Discoduroderoer
+ * @author 2004c
  */
 public class Array {
 
     /**
-     * Indica si un número es capicua, es decir, que es el mismo número si se
-     * lee igual por el principio y por el final
+     * Indica si un número es capicua, es decir, si se
+     * lee igual por derecha y por izquierda
      *
      * @param numero
      * @return True si es capicua, false si no lo es
@@ -31,8 +27,7 @@ public class Array {
     }
 
     /**
-     * Redimensiona un array de números dando una nueva logitud, los datos
-     * posteriores se borraran
+     * Crea una nueva logitud, los datos posteriores se borraran
      *
      * @param array Array que queremos redimensionar
      * @param nuevaLongitud La longitud que tendrá el nuevo array
@@ -57,7 +52,6 @@ public class Array {
         }
 
         return temp;
-
     }
 
     /**
@@ -77,7 +71,6 @@ public class Array {
         } else {
             return arraysIgualesRec(a1, a2, indice + 1);
         }
-
     }
 
     /**
@@ -103,7 +96,6 @@ public class Array {
             for (int i = 0; i < array.length; i++) {
                 temp[i] = array[i];
             }
-
         }
 
         return temp;
@@ -127,7 +119,6 @@ public class Array {
         }
 
         return temp;
-
     }
 
     /**
@@ -164,7 +155,6 @@ public class Array {
         }
 
         return tipos;
-
     }
 
     /**
@@ -190,7 +180,6 @@ public class Array {
 
         // No hay un elemento repetido
         return false;
-
     }
 
     /**
@@ -212,7 +201,6 @@ public class Array {
 
         // No hay un elemento repetido
         return false;
-
     }
 
     /**
@@ -234,7 +222,6 @@ public class Array {
 
         // No hay un elemento repetido
         return false;
-
     }
 
     /**
@@ -265,7 +252,7 @@ public class Array {
     }
 
     /**
-     * Indica cuantas veces se repite un elemento en el arrat dado
+     * Indica cuantas veces se repite un elemento en el array dado
      *
      * @param array Array a comprobar
      * @param elemento Elemento a buscar
@@ -376,7 +363,5 @@ public class Array {
             array[fin] = aux;
             invertirArrayRecursivo(array, inicio + 1, fin - 1);
         }
-
     }
-
 }
