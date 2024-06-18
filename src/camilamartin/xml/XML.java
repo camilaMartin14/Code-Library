@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.xml;
 
 import java.io.File;
@@ -29,7 +25,7 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class XML {
 
@@ -180,7 +176,6 @@ public class XML {
 
             }
         }
-
         contenido += "\n";
 
         return contenido;
@@ -197,6 +192,5 @@ public class XML {
 
         NodeList nl = e.getElementsByTagName(nombreNodo);
         return nl.getLength();
-
     }
 }
