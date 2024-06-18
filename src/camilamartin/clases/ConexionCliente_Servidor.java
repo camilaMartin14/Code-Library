@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.clases;
 
 import java.io.DataInputStream;
@@ -23,7 +17,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public final class ConexionCliente_Servidor {
     
@@ -41,8 +35,6 @@ public final class ConexionCliente_Servidor {
         }else{
             escucha();
         }
-        
-        
     }
     
     public ConexionCliente_Servidor(boolean tipo, String pHost, int pPuerto){
@@ -69,7 +61,6 @@ public final class ConexionCliente_Servidor {
             JOptionPane.showMessageDialog(null, "Debes iniciar el servidor antes");
             System.exit(0);
         }
-        
     }
     
     /**
@@ -88,7 +79,6 @@ public final class ConexionCliente_Servidor {
             JOptionPane.showMessageDialog(null, "Debes iniciar el servidor antes");
             System.exit(0);
         }
-        
     }
     
     /**
@@ -107,7 +97,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     /**
@@ -127,7 +116,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
     
     /**
@@ -146,7 +134,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -165,7 +152,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -184,7 +170,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -203,7 +188,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -222,7 +206,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -244,7 +227,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return valor;   
-        
     }
     
     /**
@@ -265,7 +247,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -286,7 +267,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -307,7 +287,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -328,7 +307,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -349,7 +327,6 @@ public final class ConexionCliente_Servidor {
         } catch (IOException ex) {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     /**
@@ -371,7 +348,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return cadena;   
-        
     }
     
     /**
@@ -393,7 +369,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return valor;   
-        
     }
     
     /**
@@ -415,9 +390,7 @@ public final class ConexionCliente_Servidor {
         }
         
         return valor;   
-        
     }
-    
   
     
     /**
@@ -443,7 +416,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return array;   
-        
     }
     
     /**
@@ -469,7 +441,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return array;   
-        
     }
     
     /**
@@ -495,7 +466,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return array;   
-        
     }
     
     /**
@@ -521,7 +491,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return array;   
-        
     }
     
     /**
@@ -547,7 +516,6 @@ public final class ConexionCliente_Servidor {
         }
         
         return matriz;   
-        
     }
     
     /**
@@ -560,5 +528,4 @@ public final class ConexionCliente_Servidor {
             Logger.getLogger(ConexionCliente_Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
 }
