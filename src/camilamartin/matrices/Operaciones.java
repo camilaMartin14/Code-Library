@@ -4,10 +4,9 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Operaciones {
- 
     
     /**
      * Realiza el producto de dos matrices
@@ -38,7 +37,6 @@ public class Operaciones {
             }   
         }
         return matrizProducto;
-        
     }
     
     /**
@@ -57,7 +55,5 @@ public class Operaciones {
             }
         }
         return sumaMatrices;
-        
     }
-    
 }

@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.matrices;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class EstadoMatriz {
 
@@ -39,7 +34,6 @@ public class EstadoMatriz {
         if (matriz[posiciones[0]][posiciones[1]] != null) {
             existe = true;
         }
-
         return existe;
     }
 
@@ -60,9 +54,7 @@ public class EstadoMatriz {
                 }
             }
         }
-
         return vacia;
-
     }
 
     /**
@@ -82,9 +74,7 @@ public class EstadoMatriz {
                 }
             }
         }
-
         return lleno;
-
     }
 
     /**
@@ -103,11 +93,8 @@ public class EstadoMatriz {
             if (matriz[i][columna] == null) {
                 lleno = false;
             }
-
         }
-
         return lleno;
-
     }
 
     /**
@@ -126,10 +113,7 @@ public class EstadoMatriz {
             if (matriz[fila][j] == null) {
                 lleno = false;
             }
-
         }
-
         return lleno;
     }
-
 }

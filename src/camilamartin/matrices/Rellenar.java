@@ -4,7 +4,7 @@ import camilamartin.numeros.Aleatorios;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Rellenar {
     
@@ -22,5 +22,4 @@ public class Rellenar {
             }
         }
     }
-    
 }

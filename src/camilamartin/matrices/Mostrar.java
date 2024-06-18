@@ -2,7 +2,7 @@ package camilamartin.matrices;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Mostrar {
 
@@ -83,9 +83,7 @@ public class Mostrar {
             }
             System.out.println("");
         }
-
         System.out.println("");
-
     }
 
     /**
@@ -118,9 +116,6 @@ public class Mostrar {
 
             //Volvemos a llamar la función recursivamente
             mostrarMatrizRec(matriz, i, j);
-
         }
-
     }
-
 }

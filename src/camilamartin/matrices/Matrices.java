@@ -1,7 +1,7 @@
 package camilamartin.matrices;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Matrices {
 

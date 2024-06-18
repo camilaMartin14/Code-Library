@@ -1,10 +1,9 @@
-
 package camilamartin.matrices;
 
 import camilamartin.numeros.Aleatorios;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Posicionar {
     
@@ -41,7 +40,6 @@ public class Posicionar {
         posiciones[1] = posicion % tamanio;
 
         return posiciones;
-
     }
     
     /**
@@ -72,8 +70,5 @@ public class Posicionar {
         int posicion = Aleatorios.generaNumeroAleatorio(0, (tamanio * tamanio) - 1);
 
         matriz[(int)Math.floor(posicion / tamanio)][posicion % tamanio] = objeto;
-
     }
-    
-    
 }
