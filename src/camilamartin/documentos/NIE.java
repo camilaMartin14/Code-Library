@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.documentos;
 
 import static camilamartin.documentos.Documento.cuentaCifras;
@@ -11,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public final class NIE extends Documento{
     
@@ -74,7 +68,6 @@ public final class NIE extends Documento{
         }else{
             documentoCompleto=letraInicial+String.valueOf(numero).substring(1)+letra;
         }
-        
     }
     
     /**
@@ -138,7 +131,6 @@ public final class NIE extends Documento{
        }else{
            return false;
        }
-        
     }
     
     /**
@@ -203,7 +195,5 @@ public final class NIE extends Documento{
         }
         
         return NIEs;
-        
     }
-    
 }

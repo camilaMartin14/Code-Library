@@ -1,14 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.documentos;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class DNI extends Documento{
     
@@ -54,7 +50,6 @@ public class DNI extends Documento{
             letra=' ';
             documentoCompleto="";
         }
-        
     }
     
     /**
@@ -81,7 +76,6 @@ public class DNI extends Documento{
         }else{
             documentoCompleto=String.valueOf(numero)+letra;
         }
-        
     }
     
     /**
@@ -124,7 +118,6 @@ public class DNI extends Documento{
            JOptionPane.showMessageDialog(null, "El DNI debe ser de 8 u 9 cifras", "", JOptionPane.ERROR_MESSAGE);
            return false;
        }
-        
     }
     
     /**
@@ -161,7 +154,6 @@ public class DNI extends Documento{
         }else{
             return String.valueOf(numero)+letra;
         }
-        
     }
     
     /**
@@ -188,7 +180,5 @@ public class DNI extends Documento{
         }
         
         return DNIs;
-        
     }
-    
 }

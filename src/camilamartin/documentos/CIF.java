@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.documentos;
 
 /**
  *
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public final class CIF extends Documento{
     
@@ -62,7 +56,6 @@ public final class CIF extends Documento{
             letra=' ';
             completarDocumento();
         }
-        
     }
     
     /**
@@ -104,7 +97,6 @@ public final class CIF extends Documento{
         }
         
         documentoCompleto =  letraInicial + numeroCompleto + digitoControl ;
-        
     }
     
     /**
@@ -135,7 +127,6 @@ public final class CIF extends Documento{
                 
             }
         }
-        
         return numerosProvincias;
     }
     
@@ -158,7 +149,6 @@ public final class CIF extends Documento{
             }else{
                 B+=sumaArray(devuelveDigitos(digitoActual*2));
             }
-            
         }
      
         int C=A+B;
@@ -166,7 +156,6 @@ public final class CIF extends Documento{
         int D=Integer.parseInt(String.valueOf(String.valueOf(C).charAt(String.valueOf(C).length()-1)));
         
         return D;
-        
     }
     
     /**
@@ -223,7 +212,6 @@ public final class CIF extends Documento{
        }else{
            return false;
        }
-        
     }
     
     /**
@@ -257,7 +245,6 @@ public final class CIF extends Documento{
                 numerosProvincias[i]=String.valueOf(valorActual);
                 
             }
-            
         }
         
         String digitoProvincia=numerosProvincias[generaNumeroAleatorio(0, numerosProvincias.length-1)];
@@ -278,7 +265,6 @@ public final class CIF extends Documento{
             }else{
                 B+=sumaArray(devuelveDigitos(digitoActual*2));
             }
-            
         }
      
         int C=A+B;
@@ -300,7 +286,6 @@ public final class CIF extends Documento{
         }
         
         return letraInicial + numeroCompleto + digitoControl ;
-        
     }
     
     /**
@@ -327,7 +312,6 @@ public final class CIF extends Documento{
         }
         
         return CIFs;
-        
     }
     
     /**
@@ -349,7 +333,6 @@ public final class CIF extends Documento{
             numeroInicial=numero;
         }
         return invertirArray(digitos);
-        
     }
     
     /**
@@ -382,5 +365,4 @@ public final class CIF extends Documento{
         
         return temp;
     }
-    
 }
