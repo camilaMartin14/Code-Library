@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Anios {
 
@@ -25,7 +25,6 @@ public class Anios {
             esBisiesto = true;
         }
         return esBisiesto;
-
     }
 
     /**
@@ -76,7 +75,6 @@ public class Anios {
         }
 
         return diferencia;
-
     }
     
      /**
@@ -94,7 +92,7 @@ public class Anios {
         //Fecha actual
         Date actual = new Date();
 
-        //Cojo los datos necesarios
+        //tomo los datos necesarios
         int diaActual = actual.getDate();
         int mesActual = actual.getMonth() + 1;
         int anioActual = actual.getYear() + 1900;
@@ -117,7 +115,6 @@ public class Anios {
         }
 
         return diferencia;
-
     }
 
     /**
@@ -147,7 +144,6 @@ public class Anios {
         }
 
         return diferencia;
-
     }
 
     /**
@@ -171,7 +167,6 @@ public class Anios {
         }
 
         return diferencia;
-
     }
 
     /**
@@ -190,9 +185,6 @@ public class Anios {
         if (inicio.get(Calendar.DAY_OF_YEAR) > fin.get(Calendar.DAY_OF_YEAR)) {
             diferencia--;
         }
-
         return diferencia;
-
     }
-
 }

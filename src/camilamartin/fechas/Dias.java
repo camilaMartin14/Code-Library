@@ -7,7 +7,7 @@ import java.util.Calendar;
 import javax.swing.JOptionPane;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Dias {
 
@@ -52,7 +52,6 @@ public class Dias {
         } else {
             JOptionPane.showMessageDialog(null, "El mes introducido no es correcto", "Error", JOptionPane.ERROR_MESSAGE);
         }
-
         return numeroDias;
     }
 
@@ -93,7 +92,6 @@ public class Dias {
                 break;
 
         }
-
         return numeroDias;
     }
 
@@ -134,7 +132,6 @@ public class Dias {
                 break;
 
         }
-
         return numeroDias;
     }
 
@@ -173,9 +170,7 @@ public class Dias {
                     numeroDias = 28;
                 }
                 break;
-
         }
-
         return numeroDias;
     }
 
@@ -210,9 +205,7 @@ public class Dias {
         if (incluirFin) {
             dias++;
         }
-
         return dias;
-
     }
     
     /**
@@ -237,9 +230,7 @@ public class Dias {
         if (incluirFin) {
             dias++;
         }
-
         return dias;
-
     }
     
     /**
@@ -260,9 +251,6 @@ public class Dias {
         if (incluirFin) {
             dias++;
         }
-
         return dias;
-
     }
-
 }

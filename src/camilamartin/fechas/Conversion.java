@@ -9,7 +9,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Conversion {
     
@@ -40,7 +40,6 @@ public class Conversion {
         }else{
             f+=Integer.parseInt(dateFormat.format(fecha));
         }
-        
         return Integer.parseInt(f);
     }
   
@@ -72,7 +71,6 @@ public class Conversion {
         }else{
             f+=Integer.parseInt(dateFormat.format(fecha));
         }
-        
         return Integer.parseInt(f);
     }
     
@@ -192,7 +190,6 @@ public class Conversion {
         }else{
             f+=hora.getSeconds();
         }
-        
         return Integer.parseInt(f);
     }
         
@@ -234,5 +231,4 @@ public class Conversion {
         
         return fecha;        
     }
-    
 }

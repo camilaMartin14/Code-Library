@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.fechas;
 
 import java.util.Calendar;
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Meses {
     
@@ -72,7 +66,5 @@ public class Meses {
         }
 
         return meses;
-
     }
-    
 }

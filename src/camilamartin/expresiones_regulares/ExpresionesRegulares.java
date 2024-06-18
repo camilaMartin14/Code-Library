@@ -1,12 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package camilamartin.expresiones_regulares;
 
 /**
  *
- * @author DicoDurodeRoer
+ * @author 2004c
  */
 public class ExpresionesRegulares {
 
@@ -69,7 +65,6 @@ public class ExpresionesRegulares {
         } else {
             return false;
         }
-
     }
 
     /**
@@ -98,7 +93,6 @@ public class ExpresionesRegulares {
         } else {
             return false;
         }
-
     }
 
     /**
@@ -127,7 +121,6 @@ public class ExpresionesRegulares {
         } else {
             return false;
         }
-
     }
 
     /**

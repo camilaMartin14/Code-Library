@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package camilamartin.fechas;
 
 import static camilamartin.fechas.Dias.numeroDeDiasMes;
 
 
 /**
- * @author DiscoDurodeRoer
+ * @author 2004c
  */
 public class Validacion {
     
@@ -32,7 +26,6 @@ public class Validacion {
         }
         
         return valido;
-        
     } 
 
      /**
@@ -49,8 +42,6 @@ public class Validacion {
         if ((hora >= 0 && hora <= 23) && (minuto >= 0 && minuto <= 59) && (segundo >= 0 && segundo <= 59)){
             valido = true;
         }
-
         return valido;
     }
-    
 }
